@@ -1,5 +1,5 @@
 calcularValorDescuento=function(precioProducto,porcentajeDescuento){
-    let valorDescuento=(precioProducto*porcentajeDescuento)/100;
+    let valorDescuento=precioProducto*porcentajeDescuento/100;
     return valorDescuento;
 }
 
