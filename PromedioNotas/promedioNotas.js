@@ -7,5 +7,15 @@ calcularPromedioNotas=function(){
     promedio=calcularPromedio(n1,n2,n3);
     promedio2=promedio.toFixed(2);
     console.log(promedio2);
+    mostrarTexto("lblPromedio",promedio2);
+
+    if(promedio2>7){
+        mostrarImagen("imgAprobado","./imagenes/aprob.gif");
+        mostrarTexto("lblAprobado","Aprobado");
+
+    }else{
+        mostrarImagen("imgReprobado","./imagenes/reprobado.gif");
+         mostrarTexto("lblReprobado","Reprobado");
+    }
     
 }
