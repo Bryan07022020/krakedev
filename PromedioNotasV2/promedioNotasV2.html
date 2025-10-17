@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="promedioNotas.js"></script>
+        <script src="ServiciosPromedioNotas.js"></script>
+        <script src="utilitarios.js"></script>
+    </head>
+    <body>
+        <input type="text" id="txtNota1"/>
+        <input type="text" id="txtNota2"/>
+        <input type="text" id="txtNota3"/>
+
+        
+        
+        <input type="button" value="PROMEDIO" onclick="calcularPromedioNotas();"/>
+
+        <h3>Su nota es </h3>
+
+        <h3 id="lblPromedio"></h3>
+
+        <h3 id="lblError"></h3>
+
+        <h3 id="lblReprobado"></h3>
+
+        <h3 id="lblBuenTrabajo"></h3>
+
+        <h3 id="lblExcelente"></h3>
+
+        <img width="200px" id="imgError"/>
+        <img width="200px" id="imgReprobado"/>
+        
+        <img width="200px" id="imgBuenTrabajo"/>
+        <img width="200px" id="imgExcelente"/>
+        
+        
+    </body>
+</html>
