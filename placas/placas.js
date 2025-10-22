@@ -22,11 +22,26 @@ validarPlaca=function(){
     }else{
         mostrarTexto("lblTipo", " Tipo de Vehiculo es: " +tipo);
     }
+
+    let picoYPlaca;
+    picoYPlaca=obtenerDiaPicoYPlaca(placa);
+        mostrarTexto("lblDiaPicoYPlaca", " EL dia de Pico Y Placa es: " +picoYPlaca);
     }else{
         mostrarTexto("lblPlaca", " Estructura Incorrecta ");
         mostrarTexto("lblErrores",erroresEstructura);
         mostrarTexto("lblProvincia", "");
         mostrarTexto("lblTipo", "");
+        mostrarTexto("lblDiaPicoYPlaca", "");
 
     }
+}
+
+limpiar=function(){
+     mostrarTextoEnCaja("txtIngresePlaca","")    
+    mostrarTexto("lblPlaca", "");
+        mostrarTexto("lblErrores","");
+        mostrarTexto("lblProvincia", "");
+        mostrarTexto("lblTipo", "");
+        mostrarTexto("lblDiaPicoYPlaca", "");
+
 }

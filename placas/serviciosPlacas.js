@@ -152,3 +152,29 @@ obtenerTipoVehiculo=function(placa){
     }
     return tipo;
 }
+
+obtenerDiaPicoYPlaca=function(placa){
+    let diaPico;
+    let diaNoSale;
+    let ultimaPosicion=placa.length-1;
+    diaPico=placa.charAt(ultimaPosicion);
+
+    if(diaPico==1 || diaPico==2){
+        diaNoSale= "LUNES";
+    }
+    else if(diaPico==3 || diaPico==4){
+        diaNoSale="MARTES"
+    }
+    else if(diaPico==5 || diaPico==6){
+        diaNoSale="MIERCOLES"
+    }
+    else if(diaPico==7 || diaPico==8){
+        diaNoSale="JUEVES"
+    }
+    else {
+        diaNoSale="VIERNES"
+    }
+        
+    return diaNoSale;
+
+}
