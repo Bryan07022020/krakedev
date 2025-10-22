@@ -5,9 +5,29 @@
         <script src="juego.js"></script>
         <script src="serviciosJuego.js"></script>
         <script src="utilitarios.js"></script>
-
     </head>
+
     <body>
-        
+        <div class="contenedor">
+            <div class="titulo">
+            Juega Piedra, Papel o Tijera
+            </div>
+        </div>
+        <div>
+            <div class="piedra">
+                <img src="./imagenes/piedra.png" width="150px" id="imgPiedra" onclick="generarElemento();"/>
+            </div>
+            <div class="papel">
+                <img src="./imagenes/papel.png" width="150px" id="imgPapel"/>
+            </div>
+            <div class="tijera">
+                <img src="./imagenes/tijera.png" width="150px" id="imgTijera"/>
+            </div>
+
+            <div>
+                <div id="lblJuego"></div>
+            </div>
+
+        </div>
     </body>
 </html>

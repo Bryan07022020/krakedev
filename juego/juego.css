@@ -1,0 +1,47 @@
+body{
+    background-image: url("./imagenes/principal.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.titulo{
+    padding-left: 100px;
+    font-size: 30px;
+    margin-left: 350px;
+    margin-right: 500px;
+    margin-top: 70px;
+    color:rgb(128, 8, 8);
+    display: flex;
+    flex-wrap: 200px;
+}
+
+.contenedor{
+   
+    padding-left: 5px;
+    background-color: bisque;
+    padding-bottom: 0%;
+}
+
+.piedra{
+    margin-top: 120px;
+    color: black;
+    background-color: rgba(216, 0, 0, 0.548);
+    margin-left: 200px;
+    margin-right: 980px;
+}
+
+.papel{
+    margin-top: 30px;
+    color: black;
+    background-color: rgb(35, 57, 255);
+    margin-left: 500px;
+    margin-right: 680px;
+}
+
+.tijera{
+    margin-top: 20px;
+    color: black;
+    background-color: rgb(211, 245, 20);
+    margin-left: 170px;
+    margin-right: 1010px;
+}
