@@ -15,17 +15,27 @@
         </div>
         <div>
             <div class="piedra">
-                <img src="./imagenes/piedra.png" width="150px" id="imgPiedra" onclick="generarElemento();"/>
+                <img src="./imagenes/piedra.png" width="150px" id="imgPiedra" onclick="jugar('piedra');"/>
             </div>
             <div class="papel">
-                <img src="./imagenes/papel.png" width="150px" id="imgPapel"/>
+                <img src="./imagenes/papel.png" width="150px" id="imgPapel" onclick="jugar('papel');"/>
             </div>
             <div class="tijera">
-                <img src="./imagenes/tijera.png" width="150px" id="imgTijera"/>
+                <img src="./imagenes/tijera.png" width="150px" id="imgTijera" onclick="jugar('tijera');"/>
             </div>
 
             <div>
-                <div id="lblJuego"></div>
+                <h2 id="lblComputador"></h2>
+                <img src="" id="img" width="150px"/>
+
+                <h1 id="lblResultado"></h1>
+                <h3>Puntos</h3>
+                <h3>Puntos Usuario:</h3>
+                <h3 id="lblUsuario"></h3>
+                <h3>Puntos Computador:</h3>
+                <h3 id="lblComputador2"></h3>
+                <h1 id="lblResultadoFinal"></h1>
+                <input type="button" value="Limpiar" onclick="nuevaPartida();"/>
             </div>
 
         </div>

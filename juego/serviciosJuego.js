@@ -16,21 +16,22 @@ obtenerAleatorio=function(){
 generarElemento=function(){
     let aleatorio;
     aleatorio=obtenerAleatorio();
+    let imagen;
 
     if(aleatorio==1){
-        console.log("piedra")
-        mostrarTexto("lblJuego","piedra");
+        imagen="piedra"
+       
         
        } 
        else if (aleatorio==2){
-        console.log("papel")
-        mostrarTexto("lblJuego","papel");
+        imagen="papel"
+       
     }
     else{
-        console.log("tijera")
-        mostrarTexto("lblJuego","tijera");
+        imagen="tijera"
+        
     }
-    return aleatorio;  
+    return imagen;  
 }
 
 determinarGanador = function(eleccionJugador1,eleccionJugador2){
