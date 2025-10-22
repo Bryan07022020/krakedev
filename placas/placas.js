@@ -14,9 +14,19 @@ validarPlaca=function(){
     }else{
         mostrarTexto("lblProvincia", " La placa pertenece a la provincia de: "+provincia);
     }
+    let tipo;
+    tipo=obtenerTipoVehiculo(placa);
+    if(tipo==null){
+        mostrarTexto("lblTipo", " Tipo de Vehiculo incorrecto ");
+
+    }else{
+        mostrarTexto("lblTipo", " Tipo de Vehiculo es: " +tipo);
+    }
     }else{
         mostrarTexto("lblPlaca", " Estructura Incorrecta ");
         mostrarTexto("lblErrores",erroresEstructura);
         mostrarTexto("lblProvincia", "");
+        mostrarTexto("lblTipo", "");
+
     }
 }
