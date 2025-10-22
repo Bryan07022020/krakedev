@@ -1,0 +1,23 @@
+body{
+    background-image: url("carro2.jpg");
+    background-position: center;
+    background-color: aquamarine;  
+}
+
+.titulo{
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: beige;
+}
+
+.cajaDeTexto{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: medium;
+}
+
+.notificacion{
+    margin: 10px;
+    color: aliceblue;
+}
