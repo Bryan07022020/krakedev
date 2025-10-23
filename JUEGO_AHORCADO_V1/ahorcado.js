@@ -46,3 +46,12 @@ if (letrasEncontradas == 0) {
 }
 }
 
+
+
+ingresarLetra = function(){
+    let letra = recuperarTexto ("txtLetra");
+
+    if (letra.length == 0){
+        alert("Debe ingresar una letra Mayuscula");
+        return;
+    }
