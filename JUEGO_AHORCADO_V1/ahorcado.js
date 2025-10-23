@@ -46,7 +46,9 @@ if (letrasEncontradas == 0) {
 }
 }
 
-
+    let intentos = 0;
+    let coincidencias = 0;
+    let errores = 0;
 
 ingresarLetra = function(){
     let letra = recuperarTexto ("txtLetra");
@@ -55,3 +57,20 @@ ingresarLetra = function(){
         alert("Debe ingresar una letra Mayuscula");
         return;
     }
+    intentos += 1;
+
+    if (esMayuscula(letra)){
+        validar(letra);
+
+        if (coincidencias == 5){
+            alert("Ha Ganado")
+            mostrarImagen("ahorcadoImagen","./ganador.gif")
+        } else if (intentos == 10) {
+            alert("Ha Perdido")
+            mostrarImagen("ahorcadoImagen","./gameOver.gif")
+        }
+        
+    } else {
+        alert("SOLO SE ACEPTAN LETRAS MAYUSCULAS")
+    }
+}
