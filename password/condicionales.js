@@ -135,7 +135,7 @@ esDigito=function(caracter){
 
 esCaracter=function(caracter){
     let codigoCaracter=caracter.charCodeAt(0);
-    if (codigoCaracter==45 || codigoCaracter==42 || codigoCaracter==95){
+    if (codigoCaracter==45 || codigoCaracter==42 || codigoCaracter){
       return true;
 
     }else{
