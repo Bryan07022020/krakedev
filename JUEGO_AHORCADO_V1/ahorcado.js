@@ -76,5 +76,5 @@ ingresarLetra = function(){
 }
 
 mostrarAhorcado=function(){
-    mostrarImagen("ahorcadoImagen","./Ahorcado_0" + errores + ".png")
+    mostrarImagen("ahorcadoImagen","./Ahorcado_0" + errores + ".png");
 }
