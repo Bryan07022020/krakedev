@@ -74,3 +74,7 @@ ingresarLetra = function(){
         alert("SOLO SE ACEPTAN LETRAS MAYUSCULAS")
     }
 }
+
+mostrarAhorcado=function(){
+    mostrarImagen("ahorcadoImagen","./Ahorcado_0" + errores + ".png")
+}
