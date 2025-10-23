@@ -26,3 +26,23 @@ guardarPalabra = function(){
 mostrarLetra = function(letra,posicion){
     mostrarTexto("div" + posicion ,letra);   
 }
+
+validar = function(letra){
+
+letrasEncontradas = 0;
+
+for (i = 0 ; i < palabraSecreta.length ; i++ ){
+    let caracter = palabraSecreta.charAt(i);
+    if (caracter == letra){
+        mostrarLetra(letra,i);
+        letrasEncontradas++;
+        coincidencias +=1;
+    } 
+}
+if (letrasEncontradas == 0) {
+        alert("La letra No es parte de la palabra");
+        errores+=1;
+        mostrarAhorcado();
+}
+}
+
