@@ -23,9 +23,49 @@ guardarPalabra = function(){
 
 }
 
+validacionPalabra = function(palabra){
+
+    let errorPalabra ="";
+    let tieneMinuscula = false;
+
+    if (palabra.length != 5 ){
+        errorPalabra += "La palabra debe tener 5 letras Mayusculas.";
+        return errorPalabra;
+    } else {
+        for(let i = 0 ; i < palabra.length ; i++){ 
+            let caracter = palabra.charAt(i);
+
+            if (esMinuscula(caracter)){
+                tieneMinuscula = true;
+            }
+        }
+    
+    if (tieneMinuscula == true){
+        return errorPalabra += "Algunas de las letras no es mayuscula.";
+    }
+
+    }
+    return errorPalabra;
+}
+
+
 mostrarLetra = function(letra,posicion){
     mostrarTexto("div" + posicion ,letra);   
 }
+
+/*mostraLetra2 = function(letra,posicion){
+    if(posicion == 0){
+        mostrarTexto("div0" ,letra);
+    } else if (posicion == 1){
+        mostrarTexto("div1" ,letra);
+    } else if (posicion == 2){
+        mostrarTexto("div2" ,letra);
+    } else if (posicion == 3){
+        mostrarTexto("div3" ,letra);    
+    }else if (posicion == 4){
+        mostrarTexto("div3" ,letra);
+} */ 
+
 
 validar = function(letra){
 
@@ -46,9 +86,9 @@ if (letrasEncontradas == 0) {
 }
 }
 
-    let intentos = 0;
-    let coincidencias = 0;
-    let errores = 0;
+let intentos = 0;
+let coincidencias = 0;
+let errores = 0;
 
 ingresarLetra = function(){
     let letra = recuperarTexto ("txtLetra");
@@ -57,6 +97,7 @@ ingresarLetra = function(){
         alert("Debe ingresar una letra Mayuscula");
         return;
     }
+
     intentos += 1;
 
     if (esMayuscula(letra)){
@@ -75,6 +116,6 @@ ingresarLetra = function(){
     }
 }
 
-mostrarAhorcado=function(){
-    mostrarImagen("ahorcadoImagen","./Ahorcado_0" + errores + ".png");
+mostrarAhorcado = function(){
+    mostrarImagen("ahorcadoImagen","./Ahorcado_0" + errores + ".png")
 }
