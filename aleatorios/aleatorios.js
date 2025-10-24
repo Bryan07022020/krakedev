@@ -1,21 +1,10 @@
-numerosAleatorios= function(){
-    let aleatorio;
-    let numeroMultiplicado;
-    let numeroEntero;
-    let valorAleatorio;
-    aleatorio=Math.random(); // valores entre 0 y 1
-    numeroMultiplicado=aleatorio*100;
-   // console.log(numeroMultiplicado);
-    numeroEntero=parseInt(numeroMultiplicado);
-   // console.log("----->"+numeroEntero);
-    valorAleatorio=numeroEntero+1;
-   // console.log("------>"+valorDado);
-    return valorAleatorio;  
+numeroAleatorio = function(){
+    let aleatorio = parseInt(Math.random() * 100 + 1);
+    return aleatorio;
 }
 
-generarAleatorios=function(){
-
-let valorUsuario = recuperarInt("txtNumero");
+generarAleatorio = function(){
+    let valorUsuario = recuperarInt("txtNumero");
     let error = ""
 
     if(valorUsuario < 5 || valorUsuario > 20){
